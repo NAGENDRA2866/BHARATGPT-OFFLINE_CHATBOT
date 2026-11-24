@@ -1,0 +1,25 @@
+# Local Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Downloaded model weights are large and should be managed separately
+models/
+
+# Local chat data, uploaded documents, and vector database
+chat_sessions/
+chroma_db/
+pdfs/
+
+# Local logs and secrets
+*.log
+.env
+.env.*
+!.env.example
+
+# OS metadata
+.DS_Store
+Thumbs.db
