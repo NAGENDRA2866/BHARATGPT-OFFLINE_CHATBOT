@@ -1,27 +1,30 @@
-# BharatGPT  
-**ChatGPT ka desi, offline version – with audio, PDF, text & image input support!**  
+# BharatGPT
+**Chatbot-offline version – with audio, PDF, text and image input support!**
 
-## What is BharatGPT?  
-BharatGPT is an offline AI chatbot that works just like ChatGPT but runs **completely on your device**. No internet, no tracking – just fast, private AI magic.
+## What is BharatGPT?
+BharatGPT is an offline AI chatbot that works like ChatGPT but runs completely on your device.
+It does not require a server or external API for chat, transcription, PDF retrieval, or image understanding.
 
-## Features  
--  **Chat offline** using local LLMs  
--  **Talk with voice** – mic input supported  
--  **Ask questions from PDFs**  
--  **Text-based Q&A**  
--  **Image understanding** (basic vision model support)  
--  100% Private – all data stays on your system  
--  Super fast responses (no server delay)
+## Features
+- **Chat offline** using a local GGUF LLM
+- **Talk with voice** using microphone input
+- **Upload audio** for transcription
+- **Ask questions from PDFs**
+- **Text-based Q&A**
+- **Image understanding** with a matching LLaVA model
+- **Private by design** – data stays on your system
+- **No runtime model downloads**
 
-##  Tech Stack  
-- Python  
-- LLMs (LLaMA/Mistral or any GGUF format)  
-- Whisper (for speech-to-text)  
-- PyMuPDF / pdfplumber (for PDF reading)  
-- OpenCV / transformers (for image input)  
-- Streamlit (UI)
+## Tech Stack
+- Python
+- Streamlit
+- LLaMA/LLaVA GGUF models
+- Whisper for speech-to-text
+- PyMuPDF-compatible PDF text extraction through pypdfium2
+- Transformers and PyTorch for embeddings
+- ChromaDB for local PDF retrieval
 
-##  How to Use  
+## Installation and Run
 ```bash
 python -m venv .venv
 # Windows PowerShell:
@@ -32,10 +35,11 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-The project disables Streamlit's file watcher to avoid a PyTorch `torch.classes`
-inspection error on Windows. Restart the app manually after changing code.
+The project disables Streamlit's file watcher in `.streamlit/config.toml` to avoid a
+PyTorch `torch.classes` inspection error on Windows. Restart the app manually after
+changing code.
 
-The model files are not included in the project. Put existing model files in this layout:
+Model files are not included in the repository. Place existing local model files in:
 
 ```text
 models/
@@ -66,11 +70,11 @@ for this setup and copied into `models/whisper-small`.
 Chroma telemetry is disabled. Local chat avatars are built into the app and do not load
 images from external websites.
 
-## Requirements  
+## Requirements
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-## Why BharatGPT?  
-Because not everyone wants to send their data to the cloud. BharatGPT gives you full control over your AI chatbot – in your language, on your terms.
-
+## Why BharatGPT?
+Not everyone wants to send their data to the cloud. BharatGPT gives you full control
+over your AI chatbot – in your language, on your terms.
