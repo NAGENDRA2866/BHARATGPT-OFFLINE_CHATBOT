@@ -1,17 +1,17 @@
 # 🇮🇳 BharatGPT  
-**ChatGPT ka desi, offline version – with audio, PDF, text & image input support!**  
+**Chatbot-offline version – with audio, PDF, text & image input support!**  
 
-## 🧠 What is BharatGPT?  
+##  What is BharatGPT?  
 BharatGPT is an offline AI chatbot that works just like ChatGPT but runs **completely on your device**. No internet, no tracking – just fast, private AI magic.
 
-## 🚀 Features  
-- 💬 **Chat offline** using local LLMs  
-- 🗣️ **Talk with voice** – mic input supported  
-- 📄 **Ask questions from PDFs**  
-- 📝 **Text-based Q&A**  
-- 🖼️ **Image understanding** (basic vision model support)  
-- 🔒 100% Private – all data stays on your system  
-- ⚡ Super fast responses (no server delay)
+##  Features  
+-  **Chat offline** using local LLMs  
+-  **Talk with voice** – mic input supported  
+-  **Ask questions from PDFs**  
+-  **Text-based Q&A**  
+-  **Image understanding** (basic vision model support)  
+-  100% Private – all data stays on your system  
+-  Super fast responses (no server delay)
 
 ## 🛠️ Tech Stack  
 - Python  
@@ -21,7 +21,7 @@ BharatGPT is an offline AI chatbot that works just like ChatGPT but runs **compl
 - OpenCV / transformers (for image input)  
 - Streamlit (UI)
 
-## 📁 How to Use  
+##  How to Use  
 ```bash
 python -m venv .venv
 # Windows PowerShell:
@@ -66,11 +66,11 @@ for this setup and copied into `models/whisper-small`.
 Chroma telemetry is disabled. Local chat avatars are built into the app and do not load
 images from external websites.
 
-## 📦 Requirements  
+##  Requirements  
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-## 🎯 Why BharatGPT?  
+## Why BharatGPT?  
 Because not everyone wants to send their data to the cloud. BharatGPT gives you full control over your AI chatbot – in your language, on your terms.
 
