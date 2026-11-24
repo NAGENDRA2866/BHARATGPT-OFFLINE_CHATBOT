@@ -1,4 +1,4 @@
-# 🇮🇳 BharatGPT  
+# BharatGPT  
 **Chatbot-offline version – with audio, PDF, text & image input support!**  
 
 ##  What is BharatGPT?  
