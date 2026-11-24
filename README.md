@@ -13,7 +13,7 @@ BharatGPT is an offline AI chatbot that works just like ChatGPT but runs **compl
 -  100% Private – all data stays on your system  
 -  Super fast responses (no server delay)
 
-## 🛠️ Tech Stack  
+##  Tech Stack  
 - Python  
 - LLMs (LLaMA/Mistral or any GGUF format)  
 - Whisper (for speech-to-text)  
